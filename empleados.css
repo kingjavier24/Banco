@@ -1,0 +1,25 @@
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 50px;
+    margin-left: 410px;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.boton_personalizado{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    margin-left:700px;
+    margin-top: 60px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }

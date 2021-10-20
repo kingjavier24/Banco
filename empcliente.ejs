@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery-3.6.0.min.js"></script>      <!--  puede que no funcione por que le puso el pinche punto -->
+    <script src="./js/actualizarcli.js"></script>
+    <script src="./js/eliminarcli.js"></script>
+
+    <link rel="stylesheet"  href="/css/empcliente.css">
+    <title>Banco</title>
+</head>
+<section class="form-registerr">
+    
+    <title></title>
+</head>
+<body>
+    <h1>Bienvenido señor(a)  <%= uss %></h1>
+    <div class="login">
+
+        <form action="/frminsertar5" method="POST" >
+        
+  
+     
+                <div class="container-login">
+                  <div class="wrap-login">
+                          <span class="login-form-title">LOGIN Clientes</span>
+                          
+
+                              <input  class="input100" type="text"     id="Documento" name="CliId" placeholder="Documento">
+                              <input  class="input100" type="text"     id="nombre" name="CliNombre" placeholder="NOMBRE">
+                              <input  class="input100" type="text"     id="Apellido" name="CliApellido" placeholder="Apellido">
+                              <input  class="input100" type="text"     id="Correo" name="CliCorreo" placeholder="Correo">
+                              <input  class="input100" type="text"     id="Celular" name="CliCelular" placeholder="Celular">
+                              <input  class="input100" type="text"     id="Sexo" name="CliSexo" placeholder="Sexo">
+                              <input  class="input100" type="date"     id="FecNac" name="CliFecNac" placeholder="Fecha de Nacimiento">
+                            
+
+
+
+
+                            <span class="focus-efecto"></span>
+
+                          
+                          <div class="container-login-form-btn">
+                              <div class="wrap-login-form-btn">
+                                  <div class="login-form-bgbtn"></div>
+                                  <button type="submit" name="submit" class="login-form-btn">INGRESAR NUEVO DATO</button>
+                              </div>
+                            </div>
+                  </div>
+              </div>     
+
+
+
+
+    
+    </form>
+</section>
+
+<form action="" none="frm" id="frm">
+
+    <thead>            
+
+  
+        <div class="form-register">
+
+    <table border="1" width=10>	
+      
+		<tr>
+		<td> DOCUMENTO </td>
+		<td> nombre </td>
+		<td>Apellido</td>
+		<td> Correo</td>
+		<td> Celular</td>
+		<td> Sexo</td>
+        <td> Fecha de Nacimiento</td>
+		<td> ACTUALIZAR</td>
+		<td> ELIMINAR</td>
+
+<tbody>
+    <% datos.forEach(function(datos){%>
+    
+        <tr>
+            <td><input   type="text"  value="<%=datos.CliId%>"   required      id="doc"        name="CliId"          class="doc"  ></td>
+            <td><input   type="text"  value="<%=datos.CliNombre%>" required   id="Nombre"    name="Nombre"      class="usu"  ></td>
+            <td><input   type="text"  value="<%=datos.CliApellido%>"  required id="Apellido"  name="Apellido"    class="ape"  ></td>
+            <td><input   type="text"  value="<%=datos.CliCorreo%>"  required   id="Correo"    name="Correo"      class="corr"  ></td>
+            <td><input   type="text"  value="<%=datos.CliCelular%>" required   id="cel"       name="cel"         class="celu" ></td>
+            <td><input   type="text"  value="<%=datos.CliSexo%>"  required    id="sex"        name="sex"        class="sexo"  ></td>
+            <td><input   type="text"  value="<%=datos.CliFecNac%>" required    id="FecNac"  name="FecNac"        class="FecNa"  ></td>
+            <td><input   type="submit"  value="actualizar" name="btnactcli"    class="btnactcli"   ></td>
+            <td><input   type="submit"  value="eliminar "  name="btnelits"    class="btnelits"   ></td>
+    <%})%>
+
+</tbody>
+
+</table>
+</div>
+
+        <a class="boton_personalizado" href="creditos">creditos</a>
+        <a class="boton_personalizado" href="empleados">Volver</a>
+
+</head>
+</form>    
+</body>
+</html>

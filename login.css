@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: url('/imagenes/fondo.jpg');
+    background-size: cover;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+label{
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+input{
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+div{
+    border-radius: 50px;
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+    margin-top: 90px;
+}
+.nombre{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 180px;
+    margin-top: -30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+   
+}
+.boton{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-left: 200px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(221, 221, 221);
+}
+.contra{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 160px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}

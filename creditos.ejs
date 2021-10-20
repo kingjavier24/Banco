@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery-3.6.0.min.js"></script>      <!--  puede que no funcione por que le puso el pinche punto -->
+    <script src="./js/actualizarcre.js"></script>
+    <script src="./js/eliminarcre.js"></script>
+    <!--<script src="./js/eliminarcre.js"></script>-->
+
+    <link rel="stylesheet"  href="/css/creditos.css">
+    <title>Banco</title>
+</head>
+<section class="form-registerr">
+    <form action="/frminsertar3" method="POST">
+    <title></title>
+</head>
+<body>
+    <h1>Bienvenido señor(a) <%= nomemp %></h1>
+    
+    <div class="login">
+      
+        
+  
+     
+                <div class="container-login">
+                  <div class="wrap-login">
+                          <span class="login-form-title">Creditos</span>
+                          
+
+                              <input  class="input100" type="text" id="Codigo"              name="CreCodigo"      placeholder="Codigo">
+                              <input  class="input100" type="text" id="Documento"           name="CreId"          placeholder="id">
+                              <input  class="input100" type="text" id="Linea"               name="CreLinea"       placeholder="linea">
+                              <input  class="input100" type="text" id="Monto Prestamo"      name="CreMontPres"    placeholder="Monto Prestamo">
+                              <input  class="input100" type="date" id="Fecha de Aprobacion" name="CreFecAprobada" placeholder="Fecha de Aprobacion">
+                              <input  class="input100" type="date" id="Plazo"               name="CrePlazo"       placeholder="Plazo">
+                            
+
+
+
+
+                            <span class="focus-efecto"></span>
+
+                          
+                          <div class="container-login-form-btn">
+                              <div class="wrap-login-form-btn">
+                                  <div class="login-form-bgbtn"></div>
+                                  <button type="submit" name="submit" class="login-form-btn">INGRESAR NUEVO DATO</button>
+                              </div>
+                            </div>
+                  </div>
+              </div>     
+
+
+
+
+    
+    </form>
+</section>
+<form action="" none="frm" id="frm">
+
+    <thead>            
+
+  
+        <div class="form-register">
+
+    <table border="1" width=10>	
+      
+		<tr>
+		<td> Codigo </td>
+		<td> Documento </td>
+		<td> Linea</td>
+		<td> Monto Prestamo</td>
+		<td> Fecha de Aprobacion</td>
+		<td> Plazo</td>
+		<td> ACTUALIZAR</td>
+		<td> ELIMINAR</td>
+   
+<tbody>
+    <% datos.forEach(function(datos){%>
+
+            <tr>
+    
+                <td><input   type="text"  value="<%=datos.CreCodigo%>"  required        id="Codigo"      name="Codigo"      class="cod"  ></td>
+                <td><input   type="text"  value="<%=datos.CreId%>"  required            id="Id"          name="Id"          class="id"></td>
+                <td><input   type="text"  value="<%=datos.CreLinea%>"    required       id="Linea"       name="Linea"       class="lin"></td>
+                <td><input   type="text"  value="<%=datos.CreMontPres%>"      required  id="MontPres"    name="MontPres"    class="mon"></td>
+                <td><input  type="text"  value="<%=datos.CreFecAprobada%>"   required   id="FecAprobada" name="FecAprobada" class="fec"></td>
+                <td><input   type="text"  value="<%=datos.CrePlazo%>"   required        id="Plazo"       name="Plazo"       class="pla"></td>
+                <td><input   type="submit"  value="actualizar" name="btnact" class="btnact"  ></td>
+                <td><input   type="submit"  value="eliminar "  name="btneliv" class="btneliv" ></td>
+            <%})%>
+</tbody>
+</table>
+</div>
+</head>
+</form>    
+</body>
+</html>

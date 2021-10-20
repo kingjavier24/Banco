@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery-3.6.0.min.js"></script>  
+    <script src="./js/actualizarlin.js"></script>
+    <script src="./js/eliminarlin.js"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/lineas.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Banco</title>
+</head>
+<section class="form-registerr">
+    <title>Banco / Iniciar sesion</title>
+</head>
+<body>
+    <h1>Bienvenido señor(a) <%= nomemp %></h1>
+    
+    <div class="login">
+      
+        <form action="/frminsertar4" method="POST">
+  
+     
+                <div class="container-login">
+                  <div class="wrap-login">
+                          <span class="login-form-title">LOGIN BANCO</span>
+                          
+
+                              <input  class="input100" type="text"     id="Codigo" name="LinCodigo" placeholder="Codigo">
+                              <input  class="input100" type="text"     id="Nombre Linea" name="LinNomLinea" placeholder="Nombre Linea">
+                              <input  class="input100" type="text"     id="Monto Maximo Credito" name="LinMontMaxCred" placeholder="Monto Maximo Credito">
+                              <input  class="input100" type="text"     id="Plazo Maximo Credito" name="LinPlazoMaxCred" placeholder="Plazo Maximo Credito">
+                            
+
+
+
+
+                            <span class="focus-efecto"></span>
+
+                          
+                          <div class="container-login-form-btn">
+                              <div class="wrap-login-form-btn">
+                                  <div class="login-form-bgbtn"></div>
+                                  <button type="submit" name="submit" class="login-form-btn">INGRESAR NUEVO DATO</button>
+                              </div>
+                            </div>
+                  </div>
+              </div>     
+    </form>
+</section>
+<form action="" none="frm" id="frm">
+
+    <thead>            
+
+  
+        <div class="form-register">
+
+    <table border="1" width=10>	
+      
+		<tr>
+		<td> Codigo </td>
+		<td> Nombre linea </td>
+		<td>Monto maximo del credito</td>
+		<td> Plazo maximo del credito</td>
+        <td> Actualizar</td>
+		<td> ELIMINAR</td>
+<tbody>
+    <% datos.forEach(function(datos){%>
+        <tr>
+
+            <td><input   type="text"  value="<%=datos.LinCodigo%>"         required    id="Codigo"    name="Codigo"          class="Codigo" ></td>
+            <td><input   type="text"  value="<%=datos.LinNomLinea%>"       required    id="NomLinea"     name="NomLinea"     class="nomli"></td>
+            <td><input   type="text"  value="<%=datos.LinMontMaxCred%>"    required    id="MontMaxCred"    name="MontMaxCred"    class="montmax"></td>
+            <td><input   type="text"  value="<%=datos.LinPlazoMaxCred%>"   required    id="PlazoMaxCred"    name="PlazoMaxCred"    class="plaz"></td>
+            
+
+            <td><input   type="submit"  value="actualizar" name="btnact" class="btnact"  ></td>
+            <td><input   type="submit"  value="eliminar "  name="btneli" class="btneli" ></td>
+            <%})%>
+        
+</tbody>
+</table>
+</div>
+</head>
+</form>    
+</body>
+</html>
+       
+
+
+

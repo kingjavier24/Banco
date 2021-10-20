@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="icon" href="./public/APP_PROYECTO_FINAL/img/LOGO_APP.png" type="LOGO_APP.png" > -->
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="/js/jquery-3.6.0.min.js"></script>      <!--  puede que no funcione por que le puso el pinche punto -->
+    <script src="./js/actualizarconcli.js"></script>
+    <script src="./js/eliminar.js"></script>
+
+    <link rel="stylesheet"  href="/css/conccli.css">
+
+    <title>USUARIOS</title>
+
+<body>
+
+
+<section class="form-registerr">
+    <form action="/frminsertar6" method="POST">
+
+
+    <title>Banco / Iniciar sesion</title>
+</head>
+<body>
+    <h1>Bienvenido señor(a)  <%= uss %></h1>
+    
+
+
+
+
+    
+    </form>
+</section>
+
+<form action="" none="frm" id="frm">
+
+  
+        <div class="form-register">
+
+    <table border="1" width=10>	
+      
+		<tr>
+        <td> Documento </td>
+		<td> USUARIO </td>
+		<td> CLAVE</td>
+		<td> ACTUALIZAR</td>
+		
+
+<tbody>
+    <% datos.forEach(function(datos){%>
+
+        
+        <tr>
+            <td><input   type="text"  value="<%=datos.UsuId%>"  required   id="doc"  name="doc"       class="doc" class="login-form-btn" ></td>
+            <td><input   type="text"  value="<%=datos.UsuNombre%>"  required   id="usu"  name="usu"       class="usu"  ></td>
+            <td><input   type="text"  value="<%=datos.UsuClave%>"    required   id="cal"  name="cla"       class="clave"  ></td>
+            
+ 
+            <td><input  type="submit"  value="actualizar" name="btnact" class="btnact"></td>
+           
+       <%})%> 
+
+</tbody>
+        
+
+        </table>
+    </div>
+
+    <a  class="boton_personalizado" href="cerrar">Cerrar sesion</a>
+    
+    
+
+</head>
+</form>
+</body>
+</html>

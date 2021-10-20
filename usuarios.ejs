@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="icon" href="./public/APP_PROYECTO_FINAL/img/LOGO_APP.png" type="LOGO_APP.png" > -->
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="/js/jquery-3.6.0.min.js"></script>      <!--  puede que no funcione por que le puso el pinche punto -->
+    <script src="./js/actualizar.js"></script>
+    <script src="./js/eliminar.js"></script>
+
+    <link rel="stylesheet"  href="/css/usuario.css">
+
+    <title>USUARIOS</title>
+
+<body>
+
+
+<section class="form-registerr">
+    <form action="/frminsertar " method="POST">
+
+
+    <title>Banco / Iniciar sesion</title>
+</head>
+<body>
+    <h1>Bienvenido señor(a)  <%= uss %></h1>
+    
+    <div class="login">
+      
+        <form action="/login" method="POST" autocomplete="off" class="login">
+  
+     
+                <div class="container-login">
+                  <div class="wrap-login">
+                          <span class="login-form-title">LOGIN BANCO</span>
+                          
+
+                              <input  class="input100" type="text"     id="usuarios" name="UsuId" placeholder="CODIGO">
+                              <input  class="input100" type="text"     id="nombre" name="UsuNombre" placeholder="NOMBRE">
+                              <input  class="input100" type="password" id="clave" name="UsuClave" placeholder="CLAVE">
+                              <input  class="input100" type="text"     id="rol" name="UsuRol" placeholder="ROL">
+                              <input  class="input100" type="text"     id="estado" name="UsuEstado" placeholder="ESTADO">
+                              <input  class="input100" type="text"     id="imagen" name="UsuImagen" placeholder="IMAGEN">
+                            
+
+
+
+
+                            <span class="focus-efecto"></span>
+
+                          
+                          <div class="container-login-form-btn">
+                              <div class="wrap-login-form-btn">
+                                  <div class="login-form-bgbtn"></div>
+                                  <button type="submit" name="submit" class="login-form-btn">INGRESAR NUEVO DATO</button>
+                              </div>
+                            </div>
+                  </div>
+              </div>     
+
+
+
+
+    
+    </form>
+</section>
+
+<form action="" none="frm" id="frm">
+
+    <thead>            
+
+  
+        <div class="form-register">
+
+    <table border="1" width=10>	
+      
+		<tr>
+		<td> DOCUMENTO </td>
+		<td> USUARIO </td>
+		<td> CLAVE</td>
+		<td> ROL</td>
+		<td> ESTADO</td>
+		<td> IMAGEN</td>
+		<td> ACTUALIZAR</td>
+		<td> ELIMINAR</td>
+
+<tbody>
+    <% datos.forEach(function(datos){%>
+
+        
+        <tr>
+            <td><input   type="text"  value="<%=datos.UsuId%>"  required   id="doc"  name="doc"       class="doc" class="login-form-btn" ></td>
+            <td><input   type="text"  value="<%=datos.UsuNombre%>"  required   id="usu"  name="usu"       class="usu"  ></td>
+            <td><input   type="text"  value="<%=datos.UsuClave%>"    required   id="cal"  name="cla"       class="clave"  ></td>
+            <td><input   type="text"  value="<%=datos.UsuRol%>"      required   id="rol"  name="rol"       class="rol"  ></td>
+            <td><input   type="text"  value="<%=datos.UsuEstado%>"   required   id="est"  name="est"       class="estad"  ></td>
+            <td><input   type="text"  value="<%=datos.UsuImagen%>"   id="img"  name="img"       class="imgn"  ></td>
+ 
+            <td><input  type="submit"  value="actualizar" name="btnact" class="btnact"></td>
+            <td><input  type="submit"  value="eliminar"  name="btneli" class="btneli"></td>
+       <%})%> 
+
+</tbody>
+        
+
+        </table>
+    </div>
+
+    <a class="boton_personalizado" href="cerrar">Cerrar sesion</a>
+    
+    
+
+</head>
+</form>
+</body>
+</html>

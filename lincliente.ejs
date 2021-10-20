@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="icon" href="./public/APP_PROYECTO_FINAL/img/LOGO_APP.png" type="LOGO_APP.png" > -->
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="/js/jquery-3.6.0.min.js"></script>      <!--  puede que no funcione por que le puso el pinche punto -->
+    <script src="./js/actu.js"></script>
+    <script src="./js/eli.js"></script>
+
+    <link rel="stylesheet"  href="/css/lineas.css">
+
+    <title>USUARIOS</title>
+
+<body>
+
+
+<section class="form-registerr">
+    <form action="/frminsertar7" method="POST">
+
+
+    <title>Banco / Iniciar sesion</title>
+</head>
+<body>
+    <h1>Bienvenido señor(a)  <%= uss %></h1>
+    
+
+
+
+
+    
+    </form>
+</section>
+
+<form action="" none="frm" id="frm">
+
+    <thead>            
+
+  
+        <div class="form-register">
+
+    <table border="1" width=10>	
+      
+	
+        <td> CODIGO </td>
+		<td> NomLinea</td>
+		<td> MontMaxCred </td>
+		<td> PlazoMaxCred</td>
+        
+		
+
+<tbody>
+    <% datos.forEach(function(datos){%>
+
+        
+        <tr>
+            <td><input   type="text"  value="<%=datos.LinCodigo%>"  required   id="doc"  name="doc"       class="doc" class="login-form-btn" ></td>
+            <td><input   type="text"  value="<%=datos.LinNomLinea%>"  required   id="usu"  name="usu"       class="usu"  ></td>
+            <td><input   type="text"  value="<%=datos.LinMontMaxCred%>"    required   id="cal"  name="cla"       class="clave"  ></td>
+            <td><input   type="text"  value="<%=datos.LinPlazoMaxCred%>"    required   id="cal"  name="cla"       class="clave"  ></td>
+            
+ 
+            
+           
+       <%})%> 
+
+</tbody>
+        
+
+        </table>
+    </div>
+
+    <a class="boton_personalizado" href="cerrar">Cerrar sesion</a>
+    
+    
+
+</head>
+</form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+
+
+
+
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+body{
+    background: url('/imagenes/fondous.jpg');
+    background-size: cover;
+}
+section{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(139, 170, 255);
+    width: 700px;
+    height: 200px;
+    line-height : 15px;
+    margin-left: 330px;
+    margin-top: 80px;
+    border: 1px solid rgb(139, 170, 255);
+    
+    border-radius: 40px;
+}
+
+
+.boton_personalizado{
+    display: flex;
+    flex-wrap: wrap;
+    width: 110px;
+    margin-left:600px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(139, 170, 255);
+    border-radius: 6px;
+    border: 1px solid rgb(139, 170, 255);
+  }
+tbody tr td{
+ 
+    background-color: rgb(139, 170, 255);
+    margin-left: 300px;
+    
+}
+.form-register{
+    background-color: blueviolet;
+    text-decoration: none;
+    width: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 330px;
+    margin-top: 100px;
+}
+.container-login{
+    margin-left: 150px;
+
+ 
+    margin-top: 40px;
+}
+.wrap-login{
+
+    margin-left: -30px;
+}

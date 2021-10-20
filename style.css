@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #46BCFF;
+    height: 70px;
+}
+.ancho{
+    width: 80%;
+    height: 70px;
+    background: #46BCFF;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    background: #46BCFF;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.logo p a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    background: #46BCFF;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+nav ul li a:hover{
+    color: #444;
+}
+img{
+    position: absolute;
+    width: 50%;
+    left: 23%;
+    padding-top: 7%; 
+}
+.nosotros p{
+    text-align: center;
+    color: #000000;
+    width: 53%;
+    height: 370px;
+    font-size: 30px;
+    background:#6FCBFF;
+    float: left;
+    text-decoration: none;
+    padding-top: 50px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+}
+.pogo{
+    position: relative;
+    width: 33%;
+    left: 80px;
+    margin-top: -70px;
+}
+.form-register{
+    width: 400px;
+    background: #6FCBFF;
+    padding: 90px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 7px;
+    font-family: 'Raleway', sans-serif;
+}
+.form-register h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 170px;
+    background:white; 
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #6FCBFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+.form-register .botons{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
